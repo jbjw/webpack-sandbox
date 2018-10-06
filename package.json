@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "start-wds": "webpack-dev-server",
+    "start-hs": "http-server ./dist -p 80 -c -1"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/jbjw/webpack-sandbox/issues"
   },
-  "homepage": "https://github.com/jbjw/webpack-sandbox#readme"
+  "homepage": "https://github.com/jbjw/webpack-sandbox#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
 }
